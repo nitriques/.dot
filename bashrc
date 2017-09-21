@@ -1,0 +1,6 @@
+# terminal title
+# export PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007"'
+
+# terminal prompt
+export PS1="\e[0;33m->\e[m \u \w \e[0;32m$(prompt_git)\e[m\n$ "
+

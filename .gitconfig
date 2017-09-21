@@ -1,0 +1,38 @@
+[user]
+	email = nitriques@users.noreply.github.com
+	name = Nicolas Brassard
+[help]
+	autocorrect = 1
+[color]
+	ui = 1
+[core]
+	excludesfile = ~/.gitignore_global
+	abbrev = 10
+	editor = vim
+[apply]
+	whitespace = fix
+[rerere]
+	enabled = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+	rem = rm --cached
+	cp = cherry-pick
+	updatesub = submodule foreach git pull origin master
+	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+	pulls = pull --ff-only
+	pullr = pull --rebase
+	ff = merge --ff-only
+	undo = reset --soft HEAD^
+	patch = format-patch master -1 --stdout
+	please = push --force-with-lease
+	commend = commit --amend --no-edit
+	search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
+	prune = fetch --prune
+	stash-all = stash save --include-untracked
+[merge]
+	conflictstyle = diff3
+[push]
+	followTags = 1

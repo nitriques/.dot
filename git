@@ -1,0 +1,70 @@
+alias gs='git status -sb'
+alias gc='git commit -v'
+alias gca='gc -a'
+alias gcm='gca -m'
+alias gco='git checkout'
+alias gwack='git reset --hard HEAD~1'
+alias gd='g --no-pager diff'
+alias gds='gd --staged'
+alias gdw='gd --ignore-space-change --ignore-space-at-eol'
+alias gdp='git diff'
+alias gb='git branch'
+alias g='git'
+alias gut='git'
+alias gp='git pulls'
+alias gf='git fetch'
+alias gfa='gf --all'
+alias gpo='gp origin'
+alias gf='g fetch'
+alias gfo='gf origin'
+alias gdev='gpo dev'
+alias gl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+function gcat {
+  git cat-file -t $1 && git cat-file -p $@
+}
+# git checkout pull request
+# gcopr upstream 22
+function gcopr {
+  git fetch $1 pull/$2/head:pr-$2
+  git checkout pr-$2
+}
+# show files in a commit
+function gsf {
+  git diff-tree --no-commit-id --name-only -r $@
+}
+# show commit content
+function gsc {
+  gd $1^1 $1 "${@:2}"
+}
+function gt {
+  v=$1
+  git tag -a $1 -m "Version ${v}" $2 $3
+  echo "Version ${v} created"
+}
+# checkout remote gcor origin branch
+function gcor {
+  gco -b $2 $1/$2
+}
+# gpt upstream
+function gpt {
+  git push $1 --tags
+}
+# create release signed commit and signed anotated tag
+function grel {
+  v=$1
+  gcm "Release ${v}" -S
+  gt $1 -s
+}
+# removes a file from the staging area and check it out
+function greco {
+  g reset -- $1;
+  gco $1;
+  echo "Checked out" $1
+}
+
+# push to both origin and upstream
+function gpa {
+  g push upstream $@;
+  g push origin $@;
+}
+
