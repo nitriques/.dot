@@ -10,7 +10,7 @@ done;
 # symlink all .dot files
 for D in ~/.dot/.*; do
 	B="$(basename $D)"
-	if [[ "$B" != ".macos" && "$B" != "." && "$B" != ".." ]]
+	if [[ "$B" != ".macos" && "$B" != ".git" && "$B" != "." && "$B" != ".." ]]
 	then
 		if [ ! -e $B ]
 		then
