@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# git clone git@github.com:zeke/ghwd.git
+# do not install it via npm since it creates a `g` binary in PATH
+
+alias ghwd='~/ghwd/bin/ghwd'
