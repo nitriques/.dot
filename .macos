@@ -88,6 +88,18 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Require an administrator password to access system-wide preferences
+sudo security authorizationdb read system.preferences > /tmp/system.preferences.plist
+/usr/libexec/PlistBuddy -c "Set :shared false" /tmp/system.preferences.plist
+sudo security authorizationdb write system.preferences < /tmp/system.preferences.plist
+rm -f /tmp/system.preferences.plist
+
+# Disable core dumps
+sudo sysctl -w kern.coredump=1
+
+# set strong umask
+sudo launchctl config system umask 027
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
