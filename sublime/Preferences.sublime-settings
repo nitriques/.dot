@@ -1,0 +1,35 @@
+{
+	"auto_find_in_selection": true,
+	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+	"copy_with_empty_selection": false,
+	"default_encoding": "UTF-8",
+	"fallback_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"draw_white_space": "all",
+	"font_face": "Ubuntu Mono",
+	"font_size": 13,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules", "js/lib", "js/libs", "js/core"],
+	"file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace", "*.map", "*.min.css", "*.min.js"],
+	"spell_check": true,
+	"find_selected_text": true,
+	"show_full_path": true,
+	"ignored_packages":
+	[
+		"Markdown"
+	],
+	"line_numbers": true,
+	"remember_open_files": false,
+	"rulers":
+	[
+		4,
+		80,
+		100
+	],
+	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"trim_automatic_white_space": true
+}
