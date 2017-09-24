@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# issue reset to make terminal wrap correctly
+reset
+
 cat ~/.dot/motd
 
 # source all files, in this order
-for D in bash macos exports nvm grunt z prompt_git git svn bashrc; do
+for D in bash macos exports nvm grunt z prompt_git git svn ghwd bashrc; do
 	source ~/.dot/$D;
 done;
 
@@ -19,3 +22,4 @@ for D in ~/.dot/.*; do
 	fi
 done;
 
+echo $(date);
