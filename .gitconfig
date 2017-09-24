@@ -9,6 +9,7 @@
 	excludesfile = ~/.gitignore_global
 	abbrev = 10
 	editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [apply]
 	whitespace = fix
 [rerere]
@@ -37,3 +38,15 @@
 	conflictstyle = diff3
 [push]
 	followTags = 1
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
