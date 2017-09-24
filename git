@@ -1,16 +1,19 @@
+#!/bin/bash
+
+alias g='git'
+alias gut='git'
 alias gs='git status -sb'
 alias gc='git commit -v'
 alias gca='gc -a'
 alias gcm='gca -m'
 alias gco='git checkout'
+alias ga='git add'
 alias gwack='git reset --hard HEAD~1'
 alias gd='g --no-pager diff'
 alias gds='gd --staged'
 alias gdw='gd --ignore-space-change --ignore-space-at-eol'
 alias gdp='git diff'
 alias gb='git branch'
-alias g='git'
-alias gut='git'
 alias gp='git pulls'
 alias gf='git fetch'
 alias gfa='gf --all'
@@ -49,7 +52,7 @@ function gcor {
 function gpt {
   git push $1 --tags
 }
-# create release signed commit and signed anotated tag
+# create release signed commit and signed annotated tag
 function grel {
   v=$1
   gcm "Release ${v}" -S
@@ -61,7 +64,6 @@ function greco {
   gco $1;
   echo "Checked out" $1
 }
-
 # push to both origin and upstream
 function gpa {
   g push upstream $@;
