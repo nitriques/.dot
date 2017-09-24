@@ -3,7 +3,13 @@
 # issue reset to make terminal wrap correctly
 reset
 
+# show motd
 cat ~/.dot/motd
+
+# load bash completion
+for D in /usr/local/etc/bash_completion.d/*; do
+	. $D;
+done;
 
 # source all files, in this order
 for D in bash macos exports nvm grunt z prompt_git git svn ghwd bashrc; do
@@ -22,4 +28,6 @@ for D in ~/.dot/.*; do
 	fi
 done;
 
+# and we are done
 echo $(date);
+
