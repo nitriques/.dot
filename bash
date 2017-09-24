@@ -38,6 +38,9 @@ function 64e {
         node -e "console.log(new Buffer(process.argv[1]).toString('base64'))" $@
 }
 
+# top 10 biggest folders
+alias top10='du -a / | sort -n -r | head -10'
+
 # php lint all
 alias phplint='for D in **/*.php; do php -l $D; done;'
 
