@@ -8,13 +8,13 @@ alias svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias svn-add="svn st | grep '^?' | sed 's/^[? ]*/\"/' | sed 's/$/\"/' | xargs svn add"
 alias svn-ignore="svn propedit svn:ignore"
 function sd {
-  svn diff $@ | colordiff
+	svn diff $@ | colordiff
 }
 function sdw {
-  sd -x -w $@
+	sd -x -w $@
 }
 function svnlol {
-  svn log $@ | perl -l40pe 's/^-+/\n/'
+	svn log $@ | perl -l40pe 's/^-+/\n/'
 }
 alias scr='svn commit --non-recursive -m'
 alias sup.='sup'
