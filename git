@@ -1,21 +1,29 @@
 #!/bin/bash
 
 alias g='git'
+complete -o default -o nospace -F _git g
 alias gut='git'
+complete -o default -o nospace -F _git gut
 alias gs='git status -sb'
 alias gc='git commit -v'
 alias gca='gc -a'
 alias gcm='gca -m'
 alias gco='git checkout'
+__git_complete gco _git_checkout
 alias ga='git add'
+__git_complete ga _git_add
 alias gwack='git reset --hard HEAD~1'
 alias gd='g --no-pager diff'
 alias gds='gd --staged'
 alias gdw='gd --ignore-space-change --ignore-space-at-eol'
 alias gdp='git diff'
+__git_complete gdp _git_diff
 alias gb='git branch'
+__git_complete gb _git_branch
 alias gp='git pulls'
+__git_complete gp _git_pull
 alias gf='git fetch'
+__git_complete gf _git_fetch
 alias gfa='gf --all'
 alias gpo='gp origin'
 alias gf='g fetch'
@@ -69,4 +77,3 @@ function gpa {
 	g push upstream $@;
 	g push origin $@;
 }
-
