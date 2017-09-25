@@ -12,7 +12,7 @@ for D in /usr/local/etc/bash_completion.d/*; do
 done;
 
 # source all files, in this order
-for D in bash macos exports nvm grunt z prompt_git git svn ghwd bashrc; do
+for D in bash macos exports nvm grunt z prompt_git git svn ghwd thefuck bashrc; do
 	source ~/.dot/$D;
 done;
 
