@@ -1,0 +1,9 @@
+# from https://gist.github.com/kbaird/2654115
+
+*.bz2 diff=bz2
+*.gz diff=gzip
+*.tar diff=tar
+*.tar.bz2 diff=tar-bz2
+*.zip diff=zi
+*.node diff=bin
+
