@@ -77,3 +77,9 @@ function gpa {
 	g push upstream $@;
 	g push origin $@;
 }
+
+# print some infos
+git config --global user.name
+git config --global user.email
+git config --global user.signingkey
+
