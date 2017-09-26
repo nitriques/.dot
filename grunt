@@ -1,5 +1,9 @@
 #!/bin/bash
 
 # Grunt auto-completion
-eval "$(grunt --completion=bash)"
+# not working :(
+# eval "$(grunt --completion=bash)"
 
+grunt --completion=bash > grunt.completion
+source ./grunt.completion
+rm -f ./grunt.completion
