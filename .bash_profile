@@ -1,4 +1,7 @@
 #!/bin/bash
 
+OS=$(uname);
 # load proper .bash_profile
-source ~/.dot/bash_profile_$(uname)
+if [ -e ~/.dot/bash_profile_$OS ]; then
+	source ~/.dot/bash_profile_$OS;
+fi;
