@@ -50,3 +50,20 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[diff "bin"]
+	textconv = hexdump -v -C
+[diff "bz2"]
+	binary = true
+	textconv = /bin/bzcat
+[diff "gzip"]
+	binary = true
+	textconv = /bin/zcat
+[diff "tar"]
+	binary = true
+	textconv = tar --to-stdout -xf
+[diff "tar-bz2"]
+	binary = true
+	textconv = tar --to-stdout -xjf
+[diff "zip"]
+	binary = true
+	textconv = unzip -p
