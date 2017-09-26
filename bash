@@ -15,10 +15,6 @@ alias cd-='cd -'
 
 alias path='echo -e ${PATH//:/\\n}'
 
-function t {
-	z $@ trunk
-}
-
 # this function calls top with a command filter (1st arg)
 # other parameters are passed down to top
 function topp {
