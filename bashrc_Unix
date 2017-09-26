@@ -5,4 +5,3 @@
 
 # terminal prompt
 export PS1="\[\e[0;33m\]->\[\e[m\] \u \w \[\e[0;32m\]\$(prompt_git)\[\e[m\]$ "
-
