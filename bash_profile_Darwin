@@ -21,10 +21,7 @@ for D in ~/.dot/.*; do
 	B="$(basename $D)"
 	if [[ "$B" != ".macos" && "$B" != ".git" && "$B" != "." && "$B" != ".." ]]
 	then
-		if [ ! -e $B ]
-		then
-			ln -s .dot/$B $B
-		fi
+		ln -sf .dot/$B $B
 	fi
 done;
 
