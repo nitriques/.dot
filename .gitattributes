@@ -4,6 +4,6 @@
 *.gz diff=gzip
 *.tar diff=tar
 *.tar.bz2 diff=tar-bz2
-*.zip diff=zi
+*.zip diff=zip
 *.node diff=bin
 
