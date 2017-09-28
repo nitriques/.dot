@@ -44,5 +44,8 @@ Thumbs.db
 # Sublime
 *.settings
 
+# VS Code
+.vscode
+
 # Secret
 .secret
