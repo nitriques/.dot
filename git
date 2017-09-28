@@ -14,8 +14,11 @@ alias ga='git add'
 __git_complete ga _git_add
 alias gwack='git reset --hard HEAD~1'
 alias gd='g --no-pager diff'
+__git_complete gd _git_diff
 alias gds='gd --staged'
+__git_complete gds _git_diff
 alias gdw='gd --ignore-space-change --ignore-space-at-eol'
+__git_complete gdw _git_diff
 alias gdp='git diff'
 __git_complete gdp _git_diff
 alias gb='git branch'
