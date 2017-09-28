@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cp ./settings.json "%APPDATA%\Code\User\settings.json"
+cp ./settings.json "$APPDATA\\Code\\User\\settings.json"
+cp ./locale.json "$APPDATA\\Code\\User\\locale.json"
