@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# Windows
+
+alias o='start explorer .'
+alias np='start "" "C:\Program Files (x86)\Notepad++\notepad++.exe" '
+alias c='start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" '
+alias udb='touch /usr/var/locatedb.n && updatedb'
+alias st='start'
+alias subl='start "" "C:\Program Files\Sublime Text 3\sublime_text.exe"'
+alias s='subl .'
+function subal {
+    e=$1
+    find -name "*.${e}" | xargs start "" "C:\Program Files\Sublime Text 3\sublime_text.exe"
+}
+alias ab='start "" //B //WAIT "C:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\ab.exe" '
+
+# fix bash ls on windows
+alias ls='ls --color=auto'
+
+# dig on windows
+alias dig='"C:\Program Files (x86)\BIND9.8.6\dig.exe"'
+
+# photocrap
+alias psd='/c/Program\ Files/Adobe/Adobe\ Photoshop\ CS5.1\ \(64\ Bit\)/Photoshop.exe'
+
+# ssh-agent
+source ~/.sshagent
+start "" pageant ~/.ssh/*.ppk
+
+# ping ipv4
+alias ping='ping -4'
+
+# flushdns
+alias flushdns='ipconfig -flushdns'
+
+# php 5.4
+alias php54='/s/tmp/php54/php.exe'
+alias php53='/s/tmp/php53/php.exe'
+alias php70='/s/wamp64/bin/php/php7.0.0/php.exe'
+alias php71='/s/tmp/php71/php.exe'
+
+# node 4
+alias node4='C:\\Program\ Files\\nodejs4\\node.exe'
+# node 6
+alias node6='C:\\Program\ Files\\nodejs6\\node.exe'
+# node 7
+alias node7='C:\\Program\ Files\\nodejs7\\node.exe'
+# node 8
+alias node8='C:\\Program\ Files\\nodejs8\\node.exe'
+
+# grunt 4
+alias grunt4='node4 "C:\Users\Nicolas\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt"'
+
+# keybase
+alias keybase='winpty /s/github/keybase/client/go/bin/keybase.exe --standalone '
+alias kb='keybase pgp '
+
+# apache
+alias checkap='/s/wamp64/bin/apache/apache2.4.17/bin/httpd.exe -t'
+alias vhosts='subl /s/wamp64/bin/apache/apache2.4.17/conf/extra/httpd-vhosts.conf'
+
+alias checkap32='/s/wamp32/bin/apache/apache2.4.9/bin/httpd.exe -t'
+alias vhosts32='subl /s/wamp32/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf'
+
+# ncu
+alias ncu='winpty ncu.cmd'
+
+# grunt
+alias grunt='winpty grunt.cmd'
+
+# highlight
+alias hl='highlight --out-format=xterm256'
+
+# force LF
+alias lf="find . -not -path '*/\.*'  -type f -exec dos2unix {} \;"
+
+# Cygwin
+alias cygwin='start "C:\cygwin64\Cygwin.bat"'
+
+# Prompt
+export PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$'
+
+# Do not export those in Cygwin
+if [ "$(uname -o)" == "Msys" ]; then
+    export SVN_EDITOR='"C:\Program Files\Git\usr\bin\vim.exe"'
+fi
