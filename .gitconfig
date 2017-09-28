@@ -4,7 +4,7 @@
 [help]
 	autocorrect = 1
 [color]
-	ui = 1
+	ui = always
 [core]
 	excludesfile = ~/.gitignore_global
 	abbrev = 10
