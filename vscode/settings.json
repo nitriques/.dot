@@ -12,6 +12,7 @@
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.easymotionMarkerFontFamily": "Ubuntu Mono",
     "vim.mouseSelectionGoesIntoVisualMode": false,
-    "vim.overrideCopy": false
+    "vim.overrideCopy": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "telemetry.enableTelemetry": false
 }
-
