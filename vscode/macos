@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cp ./settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/.dot/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/.dot/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
+

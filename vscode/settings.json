@@ -8,5 +8,7 @@
     "editor.wordWrapColumn": 100,
     "editor.renderControlCharacters": true,
     "workbench.startupEditor": "none",
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "vim.disableAnnoyingNeovimMessage": true
 }
+
