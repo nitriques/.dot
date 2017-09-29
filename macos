@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# macOS
+
 alias l='ls -lFh'
 alias la='l -a'
 alias ll='ls -lh'
@@ -11,6 +13,7 @@ alias c='open -a "Google Chrome"'
 alias cc='open -a "Google Chrome Canary"'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ff='open -a "Firefox"'
+alias x='code .'
 
 alias flushdns="dscacheutil -flushcache && killall -HUP mDNSResponder"
 

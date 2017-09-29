@@ -13,6 +13,7 @@ function subal {
     e=$1
     find -name "*.${e}" | xargs start "" "C:\Program Files\Sublime Text 3\sublime_text.exe"
 }
+alias x='code .'
 alias ab='start "" //B //WAIT "C:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\ab.exe" '
 
 # fix bash ls on windows

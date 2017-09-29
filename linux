@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Linux (Ubuntu/Cent OS)
+
+alias x='code .'
