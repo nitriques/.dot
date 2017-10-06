@@ -1,0 +1,8 @@
+# workspace aliases
+alias w='cd workspace/assets/'
+alias b='.. && ..'
+alias v='cat package.json | jq .version'
+alias bn='cat build.json | jq .lastBuild'
+alias build='w;winpty grunt.cmd;v;bn;b'
+alias buildpush='sup;w;winpty grunt.cmd build push --force;v;bn;b'
+
