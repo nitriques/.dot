@@ -25,14 +25,12 @@ alias gdp='git diff'
 __git_complete gdp _git_diff
 alias gb='git branch'
 __git_complete gb _git_branch
-alias gp='git pulls'
-__git_complete gp _git_pull
 alias gf='git fetch'
 __git_complete gf _git_fetch
 alias gfa='gf --all'
-alias gpo='gp origin'
-alias gf='g fetch'
 alias gfo='gf origin'
+alias gpo='g push origin'
+__git_complete gpo _git_pull
 alias gdev='gpo dev'
 alias gl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 function gcat {
