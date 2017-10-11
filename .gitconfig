@@ -9,7 +9,7 @@
 	excludesfile = ~/.gitignore_global
 	abbrev = 10
 	editor = vim
-	pager = less --tabs=4 -RFX
+	pager = less --tabs=4 -E -RFX
 	whitespace = trailing-space,space-before-tab,tabwidth=4
 [apply]
 	whitespace = fix

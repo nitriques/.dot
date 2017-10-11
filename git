@@ -14,7 +14,7 @@ alias ga='git add'
 __git_complete ga _git_add
 alias gwack='git reset --hard HEAD~1'
 function gd {
-	git --no-pager diff --color $@ | diff-so-fancy | less --tabs=4 -RFX
+	git --no-pager diff --color $@ | diff-so-fancy | less --tabs=4 -E -j-1 -RFX
 }
 __git_complete gd _git_diff
 alias gds='gd --staged'
