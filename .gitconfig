@@ -4,11 +4,13 @@
 [help]
 	autocorrect = 1
 [color]
-	ui = always
+	ui = 1
 [core]
 	excludesfile = ~/.gitignore_global
 	abbrev = 10
 	editor = vim
+	pager = less --tabs=4 -RFX
+	whitespace = trailing-space,space-before-tab,tabwidth=4
 [apply]
 	whitespace = fix
 [rerere]
