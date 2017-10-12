@@ -2,3 +2,5 @@
 
 cp ~/.dot/vscode/settings.json "$APPDATA\\Code\\User\\settings.json"
 cp ~/.dot/vscode/locale.json "$APPDATA\\Code\\User\\locale.json"
+cp ~/.dot/vscode/keybindings.json "$APPDATA\\Code\\User\\keybindings.json"
+

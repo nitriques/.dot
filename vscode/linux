@@ -2,3 +2,5 @@
 
 ln -sf ~/.dot/vscode/settings.json ~/.config/Code/User/settings.json
 ln -sf ~/.dot/vscode/locale.json ~/.config/Code/User/locale.json
+ln -sf ~/.dot/vscode/keybindings.json ~/.config/Code/User/keybindings.json
+
