@@ -3,7 +3,8 @@
 # subversion aliases
 alias ss='svn status'
 alias ssm='ss | grep "^[MAD]"'
-alias sc='svn commit -m'
+alias sc='svn commit'
+alias scm='sc -m'
 alias sup='svn up'
 alias svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias svn-add="svn st | grep '^?' | sed 's/^[? ]*/\"/' | sed 's/$/\"/' | xargs svn add"
