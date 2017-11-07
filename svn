@@ -7,6 +7,7 @@ alias sc='svn commit -m'
 alias sup='svn up'
 alias svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias svn-add="svn st | grep '^?' | sed 's/^[? ]*/\"/' | sed 's/$/\"/' | xargs svn add"
+alias svn-undo-del="svn status | grep '^D' | awk '{print $2}' | xargs svn revert"
 alias svn-ignore="svn propedit svn:ignore"
 
 function sd {
