@@ -7,6 +7,14 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.renderControlCharacters": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "html.suggest.angular1": false,
+    "html.suggest.ionic": false,
+    "editor.acceptSuggestionOnEnter": "smart",
     "files.eol": "\n",
     "files.encoding": "utf8",
     "files.autoGuessEncoding": true,
@@ -38,6 +46,8 @@
         "unlogged",
         "unsanitized",
         "validators",
-        "varchar"
-    ]
+        "varchar",
+        "webp"
+    ],
+    "cSpell.language": ",fr,en"
 }
