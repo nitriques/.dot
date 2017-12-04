@@ -68,3 +68,5 @@
 [diff "zip"]
 	binary = true
 	textconv = unzip -p
+[transfer]
+	fsckObjects = true
