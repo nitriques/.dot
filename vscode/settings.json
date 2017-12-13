@@ -50,5 +50,6 @@
         "varchar",
         "webp"
     ],
-    "cSpell.language": ",fr,en"
+    "cSpell.language": ",fr,en",
+    "explorer.confirmDelete": false
 }
