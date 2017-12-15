@@ -40,6 +40,9 @@ alias top10='du -a / | sort -n -r | head -10'
 # php lint all
 alias phplint='for D in **/*.php; do php -l $D; done;'
 
+# php lint dirty files
+alias ldp="gs | grep ' M' | awk '/M (.+)\.php/ { print \$2; system(\"php -l \" \"\$2\"); }'"
+
 # extension change
 function ext {
 	if [ -z "$1" ]; then
@@ -53,7 +56,4 @@ function ext {
 		$4 mv "$f" "${f%.$1}.$2"
 	done
 }
-
-# php lint dirty files
-alias ldp="gs | grep ' M' | awk '/ M (.+)/ { system(\"php -l \" \$2); }'"
 
