@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# npmplease.comi
+alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install
