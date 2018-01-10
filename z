@@ -12,3 +12,6 @@ function t {
     fi
     return $?
 }
+
+alias e='t -e'
+
