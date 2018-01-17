@@ -13,3 +13,4 @@ if [ -e ~/.dot/bash_profile_$OS ]; then
 else
 	echo "File ~/.dot/bash_profile_$OS not found"
 fi;
+

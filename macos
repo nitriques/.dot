@@ -28,5 +28,4 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Fake the missing updatedb executable
-alias updatedb=cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;
-
+alias updatedb="cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;"
