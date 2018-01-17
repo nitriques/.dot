@@ -5,4 +5,3 @@ eval $(thefuck --alias)
 alias fuck-it='export THEFUCK_REQUIRE_CONFIRMATION=false; fuck; export THEFUCK_REQUIRE_CONFIRMATION=true'
 alias fuckit='fuck-it'
 alias f='fuck'
-

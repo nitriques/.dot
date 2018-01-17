@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# npmplease.comi
+# npmplease.com
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
