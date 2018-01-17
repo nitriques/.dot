@@ -6,6 +6,8 @@ alias l='ls -lFh'
 alias la='l -a'
 alias ll='ls -lh'
 
+alias grep='grep --color'
+
 alias o='open -a Finder .'
 alias s='open -a "Sublime Text" .'
 alias doc='cd ~/Documents'
