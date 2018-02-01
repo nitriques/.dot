@@ -5,7 +5,7 @@
     "editor.rulers": [4, 80, 100, 120],
     "editor.find.autoFindInSelection": true,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 125,
     "editor.renderControlCharacters": true,
     "editor.quickSuggestions": {
         "other": true,
