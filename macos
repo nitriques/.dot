@@ -31,3 +31,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Fake the missing updatedb executable
 alias updatedb="cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;"
+
+# homebrew sbin
+export PATH="/usr/local/sbin:$PATH"
+
