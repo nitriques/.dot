@@ -35,3 +35,6 @@ alias updatedb="cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;"
 # homebrew sbin
 export PATH="/usr/local/sbin:$PATH"
 
+# no analytics
+export HOMEBREW_NO_ANALYTICS=1
+
