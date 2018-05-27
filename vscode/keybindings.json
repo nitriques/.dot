@@ -15,5 +15,38 @@
     {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "cmd+k cmd+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "alt+[Comma]",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'standard'"
+    },
+    {
+        "key": "alt+[Period]",
+        "command": "-gitlens.diffWithNext",
+        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'standard'"
+    },
+    {
+        "key": "alt+w",
+        "command": "-gitlens.diffLineWithWorking",
+        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'standard'"
+    },
+    {
+        "key": "alt+[IntlBackslash]",
+        "command": "-gitlens.showCommitSearch",
+        "when": "gitlens:enabled && gitlens:keymap == 'standard'"
+    },
+    {
+        "key": "alt+c",
+        "command": "-gitlens.showQuickCommitFileDetails",
+        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'standard'"
     }
 ]
