@@ -39,7 +39,7 @@ function gcat {
 # git checkout pull request
 # gcopr upstream 22
 function gcopr {
-	git fetch $1 pull/$2/head:pr-$2
+	git fetch $1 pull/$2/head:pr-$2 --force
 	git checkout pr-$2
 }
 # show files in a commit
