@@ -67,5 +67,8 @@
     "gitlens.keymap": "alternate",
     "explorer.enableDragAndDrop": false,
     "explorer.autoReveal": false,
-    "window.newWindowDimensions": "inherit"
+    "window.newWindowDimensions": "inherit",
+    "telemetry.enableCrashReporter": false,
+    "window.openFoldersInNewWindow": "on",
+    "window.restoreWindows": "all"
 }
