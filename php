@@ -6,6 +6,8 @@ alias php70='/usr/local/opt/php@7.0/bin/php'
 alias php71='/usr/local/opt/php@7.1/bin/php'
 alias php72='/usr/local/opt/php@7.2/bin/php'
 alias php7='php71'
+# 7.1 by default
+export PATH="/usr/local/opt/php@7.1/bin:$PATH"
 
 # Add global composer bin
 export PATH="$PATH:~/.composer/vendor/bin"
