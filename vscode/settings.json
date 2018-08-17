@@ -70,5 +70,16 @@
     "window.newWindowDimensions": "inherit",
     "telemetry.enableCrashReporter": false,
     "window.openFoldersInNewWindow": "on",
-    "window.restoreWindows": "all"
+    "window.restoreWindows": "all",
+    "vim.cursorStylePerMode": {
+        "normal": "underline",
+        "insert": "line-thin",
+        "replace": "block-outline"
+    },
+    "vim.easymotion": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    }
 }
