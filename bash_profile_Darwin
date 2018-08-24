@@ -25,6 +25,9 @@ for D in ~/.dot/.*; do
 	fi
 done;
 
+# source fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # and we are done
 echo $(date);
 
