@@ -81,5 +81,6 @@
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
-    }
+    },
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}"
 }
