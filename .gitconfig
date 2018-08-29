@@ -40,6 +40,7 @@
 	conflictstyle = diff3
 [push]
 	followTags = 1
+	recurseSubmodules = check
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
