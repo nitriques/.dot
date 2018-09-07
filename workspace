@@ -5,5 +5,6 @@ alias w='cd workspace/assets/'
 alias b='.. && ..'
 alias v='jq .version package.json'
 alias bn='jq .lastBuild build.json'
-alias build='w;winpty grunt.cmd;v;bn;b'
-alias buildpush='sup;w;winpty grunt.cmd build push --force;v;bn;b'
+alias build='w;grunt;v;bn;b'
+alias buildpush='sup;w;grunt build push --force;v;bn;b'
+
