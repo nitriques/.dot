@@ -33,9 +33,8 @@
 	commend = commit --amend --no-edit
 	search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
 	prune = fetch --prune
-	stash-all = stash save --include-untracked
 	active = shortlog --numbered --summary --email --no-merges --since=3months
-	stsh = stash save
+	stash-all = stash push -m
 [merge]
 	conflictstyle = diff3
 [push]
