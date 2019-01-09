@@ -57,3 +57,6 @@ function ext {
 	done
 }
 
+# sed shortcut
+alias bs2fs="sed 's/\\\\/\\//g'"
+
