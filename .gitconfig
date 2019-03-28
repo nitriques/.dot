@@ -30,6 +30,7 @@
 	undo = reset --soft HEAD^
 	patch = format-patch master -1 --stdout
 	please = push --force-with-lease
+	poush = push
 	commend = commit --amend --no-edit
 	search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
 	prune = fetch --prune
