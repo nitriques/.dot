@@ -1,2 +1,13 @@
 #!/bin/bash
 
+# https://superuser.com/questions/701141/how-to-add-more-commands-to-git-bash
+# cheap watch implementation for Windows
+watch() {
+  ARGS="${@}"
+  clear;
+  while(true); do
+    OUTPUT=`$ARGS`
+    clear
+    echo -e "${OUTPUT[@]}"
+  done
+}
