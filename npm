@@ -3,5 +3,5 @@
 # npmplease.com
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 # install global deps
-alias npmglobal='npm i -g diff-so-fancy eslint grunt-cli npm-check-updates trash rwh'
+alias npmglobal='npm i -g diff-so-fancy eslint grunt-cli npm-check-updates trash rwh catj'
 
