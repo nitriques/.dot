@@ -16,14 +16,14 @@
 [rerere]
 	enabled = true
 [alias]
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --date=auto:human
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
 	rem = rm --cached
 	cp = cherry-pick
 	updatesub = submodule foreach git pull origin master
-	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline --date=auto:human
 	pulls = pull --ff-only
 	pullr = pull --rebase
 	ff = merge --ff-only
@@ -36,6 +36,7 @@
 	prune = fetch --prune
 	active = shortlog --numbered --summary --email --no-merges --since=3months
 	stash-all = stash push -m
+	sa = stash push -m
 [merge]
 	conflictstyle = diff3
 [push]
