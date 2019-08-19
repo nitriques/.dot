@@ -49,3 +49,6 @@ Thumbs.db
 
 # Secret
 .secret
+
+# applied patches
+*.patch.applied
