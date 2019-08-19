@@ -15,6 +15,9 @@ alias cd-='cd -'
 
 alias path='echo -e ${PATH//:/\\n}'
 
+# get ip addr
+alias ip='curl -s https://deuxhuithuit.com/cdn-cgi/trace | grep ip='
+
 # this function calls top with a command filter (1st arg)
 # other parameters are passed down to top
 function topp {
@@ -60,3 +63,8 @@ function ext {
 # sed shortcut
 alias bs2fs="sed 's/\\\\/\\//g'"
 
+# create empty file
+function nef {
+    BS="$((1024 * $1))";
+    dd if=/dev/zero of=$2 count=1024 bs=$BS;
+}
