@@ -12,6 +12,7 @@ alias cd..='cd ..'
 alias home='cd ~'
 alias ~='cd ~'
 alias cd-='cd -'
+alias ,.='cd -'
 
 alias path='echo -e ${PATH//:/\\n}'
 
