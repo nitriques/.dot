@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# please do not track me: https://consoledonottrack.com/
+export DO_NOT_TRACK=1
+
 # Colors
 export CLICOLOR=1
 export FORCE_COLOR=1
@@ -39,4 +42,3 @@ export MANPAGER='less -X';
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
-
