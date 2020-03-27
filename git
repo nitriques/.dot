@@ -66,7 +66,7 @@ function gpt {
 # create release signed commit and signed annotated tag
 function grel {
 	v=$1
-	gcm "Release ${v}" -S
+	gcm "(release) Version ${v}" -S
 	gt $1 -s
 }
 # removes a file from the staging area and check it out
