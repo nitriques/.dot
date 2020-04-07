@@ -17,6 +17,10 @@ function sd {
 function sdw {
 	sd -x -w $@
 }
+function sdsum {
+	svn diff -r$1:HEAD --summarize
+}
+
 function svnlol {
 	svn log $@ | perl -l40pe 's/^-+/\n/'
 }
