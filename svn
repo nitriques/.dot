@@ -24,6 +24,7 @@ function sdsum {
 function svnlol {
 	svn log $@ | perl -l40pe 's/^-+/\n/'
 }
+alias svn-lol='svnlol'
 
 alias scr='svn commit --non-recursive -m'
 alias sup.='sup'
