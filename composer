@@ -1,0 +1,3 @@
+#!/bin/bash
+
+alias composerglobal='composer global require hirak/prestissimo squizlabs/php_codesniffer composer require bartlett/php-compatinfo seld/jsonlint seld/jsonlint'
