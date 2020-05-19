@@ -5,9 +5,14 @@ complete -o default -o nospace -F _git g
 alias gut='git'
 complete -o default -o nospace -F _git gut
 alias gs='git status -sb'
+__git_complete gs _git_status
+alias gsm='gs | egrep "^.M"'
 alias gc='git commit -v'
+__git_complete gc _git_commit
 alias gca='gc -a'
+__git_complete gca _git_commit
 alias gcm='gca -m'
+__git_complete gcm _git_commit
 alias gco='git checkout'
 __git_complete gco _git_checkout
 alias ga='git add'
