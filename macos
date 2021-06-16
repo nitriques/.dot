@@ -13,10 +13,16 @@ alias s='open -a "Sublime Text" .'
 alias doc='cd ~/Documents'
 alias c='open -a "Google Chrome"'
 alias cc='open -a "Google Chrome Canary"'
+alias fz='open -a FileZilla'
+alias ec='open -a "Microsoft Edge Canary"'
+alias mstsc='open -a "Microsoft Remote Desktop Beta"'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ff='open -a "Firefox"'
+alias am='open -a "Activity Monitor"'
+alias sql='open -a "Sequel Pro"'
 alias x='code .'
-
+alias qt='open -a "Quicktime Player"'
+alias spotify='open -a Spotify'
 alias ping='prettyping --nolegend'
 
 alias dus='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
@@ -36,9 +42,17 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Fake the missing updatedb executable
 alias updatedb="cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;"
 
+# start/stop ubiquity controller
+function _ub-ctl {
+    cd /Applications/UniFi.app/Contents/Resources;
+    /usr/local/Cellar/openjdk\@8/1.8.0+275/bin/java -jar /Applications/UniFi.app/Contents/Java/ace.jar $@ &
+    cd - >/dev/null;
+}
+alias ub-start="_ub-ctl start";
+alias ub-stop="_ub-ctl stop";
+
 # homebrew sbin
 export PATH="/usr/local/sbin:$PATH"
 
 # no analytics
 export HOMEBREW_NO_ANALYTICS=1
-

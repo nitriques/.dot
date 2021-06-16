@@ -46,6 +46,7 @@ alias phplint='for D in **/*.php; do php -l $D; done;'
 
 # php lint dirty files
 alias ldp="gs | egrep '[ M]{2}' | awk '/[M ]+(.+)\.php/ { system(\"php -l \" \$2); }'"
+alias ldps="ss | grep '^[AM]' | awk '/\.php/ { system(\"php -l \" \$2); }'"
 
 # extension change
 function ext {
@@ -69,3 +70,14 @@ function nef {
     BS="$((1024 * $1))";
     dd if=/dev/zero of=$2 count=1024 bs=$BS;
 }
+
+# add ssh keys, if needed
+# from https://unix.stackexchange.com/questions/132791/have-ssh-add-be-quiet-if-key-already-there
+function _add_ssh_key() {
+	ssh-add -l | grep -q `ssh-keygen -lf $1 | awk '{print $2}'` || ssh-add "$1"
+}
+
+# jq expression to debug wrangler taills
+alias wrangler-errors="jq -r '.outcome as \$o | .event.request.url as \$u | .exceptions[] as \$e | \"\\(\$o) \\(\$e) \\(\$u)\"'";
+alias wrangler-all="jq -r '.outcome as \$o | .event.request.url as \$u | \"\\(\$o)  \\(\$u) \"'";
+alias wrangler-logs="jq -r '.event.request.url as \$u | .logs[] | .message[] as \$m | \"[\\(.timestamp/1000|todate)[\\(.level)] \\(\$m) \\(\$u)\"'";
