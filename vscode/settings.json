@@ -41,6 +41,7 @@
         "SQL's",
         "autoloader",
         "backend",
+        "checkmark",
         "comparator",
         "devkit",
         "easymotion",
@@ -49,9 +50,11 @@
         "fulltext",
         "inited",
         "memoized",
+        "overridable",
         "phpcs",
         "prepended",
         "pstm",
+        "stdlib",
         "unlogged",
         "unsanitized",
         "validators",
@@ -86,5 +89,9 @@
     },
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.multiCursorMergeOverlapping": false
+    "editor.multiCursorMergeOverlapping": false,
+    "files.associations": {
+        "*.xsl": "xsl"
+    },
+    "tabnine.experimentalAutoImports": true
 }
