@@ -18,6 +18,9 @@ function sd {
 function sdw {
 	sd -x -w $@
 }
+function sdeol {
+	sd -x --ignore-eol-style $@
+}
 function sdsum {
 	svn diff -r$1:HEAD --summarize
 }
