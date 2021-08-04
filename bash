@@ -81,3 +81,6 @@ function _add_ssh_key() {
 alias wrangler-errors="jq -r '.outcome as \$o | .event.request.url as \$u | .exceptions[] as \$e | \"\\(\$o) \\(\$e) \\(\$u)\"'";
 alias wrangler-all="jq -r '.outcome as \$o | .event.request.url as \$u | \"\\(\$o)  \\(\$u) \"'";
 alias wrangler-logs="jq -r '.event.request.url as \$u | .logs[] | .message[] as \$m | \"[\\(.timestamp/1000|todate)[\\(.level)] \\(\$m) \\(\$u)\"'";
+
+# fetch Cloudflare CA
+alias cfca="curl https://developers.cloudflare.com/ssl/e2b9968022bf23b071d95229b5678452/origin_ca_rsa_root.pem"
