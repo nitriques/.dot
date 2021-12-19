@@ -38,6 +38,7 @@
 	active = shortlog --numbered --summary --email --no-merges --since=3months
 	stash-all = stash push -m
 	sa = stash push -m
+	rb = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [merge]
 	conflictstyle = diff3
 [push]
