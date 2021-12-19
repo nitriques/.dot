@@ -32,33 +32,38 @@
     "telemetry.enableTelemetry": false,
     "phpcs.standard": "PSR2",
     "cSpell.userWords": [
-        "DOCROOT",
-        "Datasource",
-        "ERRMODE",
-        "Inno",
-        "Neovim",
-        "PHP's",
-        "SQL's",
         "autoloader",
+        "AVIF",
         "backend",
         "checkmark",
         "comparator",
+        "Datasource",
         "devkit",
+        "DOCROOT",
         "easymotion",
+        "ERRMODE",
         "errornum",
         "executables",
         "fulltext",
         "inited",
+        "Inno",
         "memoized",
+        "Neovim",
         "overridable",
+        "PHP's",
         "phpcs",
+        "pixelify",
         "prepended",
         "pstm",
+        "SQL's",
         "stdlib",
+        "sveltejs",
+        "tailwindcss",
         "unlogged",
         "unsanitized",
         "validators",
         "varchar",
+        "vercel",
         "webp"
     ],
     "cSpell.language": ",fr,en",
@@ -93,5 +98,10 @@
     "files.associations": {
         "*.xsl": "xsl"
     },
-    "tabnine.experimentalAutoImports": true
+    "tabnine.experimentalAutoImports": true,
+    "svelte.enable-ts-plugin": true,
+    "files.exclude": {
+        ".svelte-kit": true,
+        ".vercel_build_output": true
+    }
 }
