@@ -103,5 +103,7 @@
     "files.exclude": {
         ".svelte-kit": true,
         ".vercel_build_output": true
-    }
+    },
+    "git.enableStatusBarSync": false,
+    "git.rebaseWhenSync": true
 }
