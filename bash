@@ -83,4 +83,4 @@ alias wrangler-all="jq -r '.outcome as \$o | .event.request.url as \$u | \"\\(\$
 alias wrangler-logs="jq -r '.event.request.url as \$u | .logs[] | .message[] as \$m | \"[\\(.timestamp/1000|todate)[\\(.level)] \\(\$m) \\(\$u)\"'";
 
 # fetch Cloudflare CA
-alias cfca="curl https://developers.cloudflare.com/ssl/e2b9968022bf23b071d95229b5678452/origin_ca_rsa_root.pem"
+alias cfca="curl https://developers.cloudflare.com/ssl/static/origin_ca_rsa_root.pem"
