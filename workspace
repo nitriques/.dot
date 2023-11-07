@@ -9,3 +9,20 @@ alias build='w;grunt;v;bn;b'
 alias buildpush='sup;w;grunt build push --force;v;bn;b'
 alias oush='push'
 alias push='w;rm .ftppass;grunt push;v;bn;b'
+
+# upload web/uploads
+function uploads {
+  echo "  uploads:"
+  echo "    user: $1"
+  echo "    host: $2"
+  echo "    port: $3"
+  rsync -Phavz -e "ssh -p $3" ./web/uploads "$1@$2:/home/$1/web/"
+}
+
+function upfile {
+  echo "  file: $4"
+  echo "    user: $1"
+  echo "    host: $2"
+  echo "    port: $3"
+  rsync -Phavz -e "ssh -p $3" "./$4" "$1@$2:/home/$1/web/$4"
+}
