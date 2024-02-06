@@ -42,3 +42,8 @@ export MANPAGER='less -X';
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
+
+# Calm npm https://twitter.com/jnybgr/status/1754838614402310645?s=12&t=TDxaJNP8GpgUlraYy3oHEA
+export DISABLE_OPENCOLLECTIVE=1
+export ADBLOCK=1
+
