@@ -2,7 +2,7 @@
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-nvm use 8 --silent
+nvm use default
 
 # Add relative npm bin
 export PATH="$PATH:./node_modules/.bin"
