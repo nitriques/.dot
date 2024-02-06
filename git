@@ -35,7 +35,9 @@ __git_complete gf _git_fetch
 alias gfa='gf --all'
 alias gfo='gf origin'
 alias gpo='g push origin'
-__git_complete gpo _git_pull
+__git_complete gpo _git_push
+alias gp='git push'
+__git_complete gp _git_push
 alias gdev='gpo dev'
 alias gl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 function gcat {
