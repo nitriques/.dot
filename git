@@ -1,9 +1,9 @@
 #!/bin/bash
 
 alias g='git'
-complete -o default -o nospace -F _git g
+__git_complete g __git_main
 alias gut='git'
-complete -o default -o nospace -F _git gut
+__git_complete gut __git_main
 alias gs='git status -sb'
 __git_complete gs _git_status
 alias gsm='gs | egrep "^.M"'
