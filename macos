@@ -53,6 +53,7 @@ alias ub-stop="_ub-ctl stop";
 
 # homebrew sbin
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # no analytics
 export HOMEBREW_NO_ANALYTICS=1
