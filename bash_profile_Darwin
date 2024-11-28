@@ -1,15 +1,18 @@
 #!/bin/bash
 
+# suppress stupid warning
+# see https://apple.stackexchange.com/questions/371997/suppressing-the-default-interactive-shell-is-now-zsh-message-in-macos-catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # issue reset to make terminal wrap correctly
+shopt -s checkwinsize
 reset
 
 # show motd
 cat ~/.dot/motd
 
 # load bash completion
-for D in /usr/local/etc/bash_completion.d/*; do
-	. $D;
-done;
+. /usr/local/etc/bash_completion
 
 # source all files, in this order
 for D in bash macos exports npm nvm grunt z prompt_git git svn ghwd thefuck php bashrc_Unix secret workspace; do
