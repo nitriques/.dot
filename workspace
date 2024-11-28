@@ -12,11 +12,13 @@ alias push='w;rm .ftppass;grunt push;v;bn;b'
 
 # upload web/uploads
 function uploads {
+  FOLDER="${4:-uploads}"
   echo "  uploads:"
   echo "    user: $1"
   echo "    host: $2"
   echo "    port: $3"
-  rsync -Phavz -e "ssh -p $3" ./web/uploads "$1@$2:/home/$1/web/"
+  echo "    folder: $4"
+  rsync -Phavz -e "ssh -p $3" "./web/$FOLDER" "$1@$2:/home/$1/web/"
 }
 
 function upfile {
