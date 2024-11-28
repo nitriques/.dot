@@ -48,5 +48,15 @@
         "key": "alt+c",
         "command": "-gitlens.showQuickCommitFileDetails",
         "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'standard'"
+    },
+    {
+        "key": "ctrl+shift+cmd+v",
+        "command": "markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
     }
 ]
