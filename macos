@@ -15,12 +15,13 @@ alias c='open -a "Google Chrome"'
 alias cc='open -a "Google Chrome Canary"'
 alias fz='open -a FileZilla'
 alias ec='open -a "Microsoft Edge Canary"'
-alias mstsc='open -a "Microsoft Remote Desktop Beta"'
+alias mstsc='open -a "Windows App"'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ff='open -a "Firefox"'
+alias safari='open -a Safari'
 alias am='open -a "Activity Monitor"'
-alias sql='open -a "Sequel Pro"'
-alias x='code .'
+alias sql='open -a "Antares"'
+alias x='cursor .'
 alias qt='open -a "Quicktime Player"'
 alias spotify='open -a Spotify'
 alias ping='prettyping --nolegend'
@@ -35,12 +36,23 @@ alias installupdates="installupdate -a"
 
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias speedtest="networkQuality -v"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Fake the missing updatedb executable
 alias updatedb="cd /; sudo /usr/libexec/locate.updatedb; cd - > /dev/null;"
+
+# convert heic to jpg
+function heic2jpg {
+    for i in *.{heic,HEIC}; do
+        j=${i%.heic}
+        k=${j%.HEIC}
+        echo "$k"
+        sips -s format jpeg "$i" --out "$k.jpg"
+    done
+}
 
 # start/stop ubiquity controller
 function _ub-ctl {
@@ -57,3 +69,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # no analytics
 export HOMEBREW_NO_ANALYTICS=1
+# no freacking updates
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+
