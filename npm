@@ -8,3 +8,6 @@ alias npmglobal='npm i -g diff-so-fancy eslint grunt-cli npm-check-updates trash
 npm completion >> ./npm.completion
 source ./npm.completion
 rm -rf ./npm.completion
+
+# Run npm format on dirty files
+alias fdf="gs | egrep '[ MA]{2}' | awk '/\.(svelte|ts|js|cjs|md|css|json|yaml)$/ { system(\"dum format:file \" \$2); }'"
