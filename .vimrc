@@ -1,5 +1,8 @@
 syntax on
 filetype indent plugin on
+set number
+set formatoptions-=cro
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 noremap :W :w
 noremap :Q :q
