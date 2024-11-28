@@ -82,3 +82,7 @@
 	submodulesummary = 1
 [diff]
 	submodule = log
+[checkout]
+	defaultRemote = origin
+[init]
+	defaultBranch = dev
