@@ -71,4 +71,5 @@ export PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_NO_ANALYTICS=1
 # no freacking updates
 export HOMEBREW_NO_INSTALL_CLEANUP=1
-
+# no fucking updates
+export HOMEBREW_NO_AUTO_UPDATE=1
