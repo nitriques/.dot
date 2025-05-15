@@ -17,7 +17,7 @@ alias ,.='cd -'
 alias path='echo -e ${PATH//:/\\n}'
 
 # get ip addr
-alias ip='curl -s https://deuxhuithuit.com/cdn-cgi/trace | grep ip='
+alias ip='curl -s https://cms.deuxhuithuit.com/cdn-cgi/trace | grep ip='
 
 # this function calls top with a command filter (1st arg)
 # other parameters are passed down to top
